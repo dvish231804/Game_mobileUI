@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: bisque;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                animation: h1_name 2s ease-in;
+                text-decoration: underline;
+                text-decoration: double;
+            }
+
+            @keyframes h1_name {
+                from {
+                    transform: scale(0);
+                }
+
+                to {
+                    transform: scale(1.3);
+                }
+            }
+
+            .board {
+                display: grid;
+                grid-template-columns: repeat(3, 100px);
+                grid-template-rows: repeat(3, 100px);
+                gap: 5px;
+                margin: 20px auto;
+                max-width: 320px;
+                /* border: 2px solid black; */
+                padding: 2px;
+
+            }
+
+            .cell {
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+                border: 5px solid #000;
+                border-radius: 10px;
+                cursor: pointer;
+                animation: cell_name 2s linear;
+                font-size: 50px;
+                font-weight: 800;
+
+            }
+
+            .cell:hover text {
+                transform: scale(2);
+            }
+
+            @keyframes cell_name {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                20% {
+                    transform: rotate(20deg);
+                }
+
+                40% {
+                    transform:rotate(40deg);
+                }
+
+                60% {
+                    transform: rotate(60deg);
+                }
+
+                80% {
+                    transform: rotate(80deg);
+                }
+            }
+
+
+            .cell:hover {
+                background-color: #f0f0f0;
+            }
+
+            .message {
+                text-align: center;
+                margin: 20px;
+                font-size: 23px;
+                font-weight: 500;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">Tic-Tac-Toe</h1>
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="message" id="message">Your turn!</div>
+
+            <div class="text-center">
+                <button class="btn btn-primary" id="restart">Restart</button>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const board = document.getElementById('board');
+                const cells = Array.from(board.getElementsByClassName('cell'));
+                const message = document.getElementById('message');
+                const restartButton = document.getElementById('restart');
+
+                let currentPlayer = 'X';
+                let gameBoard = Array(9).fill(null);
+                let gameOver = false;
+
+                function checkWinner(board, player) {
+                    const winningCombos = [
+                        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+                        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+                        [0, 4, 8], [2, 4, 6] // Diagonals
+                    ];
+                    return winningCombos.some(combo =>
+                        combo.every(index => board[index] === player)
+                    );
+                }
+
+                function minimax(board, depth, isMaximizing) {
+                    const scores = { 'X': -10, 'O': 10, 'tie': 0 };
+
+                    if (checkWinner(board, 'O')) return scores['O'];
+                    if (checkWinner(board, 'X')) return scores['X'];
+                    if (board.every(cell => cell)) return scores['tie'];
+
+                    let bestScore = isMaximizing ? -Infinity : Infinity;
+
+                    for (let i = 0; i < board.length; i++) {
+                        if (board[i] === null) {
+                            board[i] = isMaximizing ? 'O' : 'X';
+                            const score = minimax(board, depth + 1, !isMaximizing);
+                            board[i] = null;
+                            bestScore = isMaximizing
+                                ? Math.max(score, bestScore)
+                                : Math.min(score, bestScore);
+                        }
+                    }
+                    return bestScore;
+                }
+
+                function getBestMove() {
+                    let bestMove = -1;
+                    let bestScore = -Infinity;
+
+                    for (let i = 0; i < gameBoard.length; i++) {
+                        if (gameBoard[i] === null) {
+                            gameBoard[i] = 'O';
+                            const score = minimax(gameBoard, 0, false);
+                            gameBoard[i] = null;
+                            if (score > bestScore) {
+                                bestScore = score;
+                                bestMove = i;
+                            }
+                        }
+                    }
+                    return bestMove;
+                }
+
+                function getRandomMove() {
+                    const availableMoves = gameBoard.map((val, index) => val === null ? index : null).filter(val => val !== null);
+                    return availableMoves[Math.floor(Math.random() * availableMoves.length)];
+                }
+
+                function computerMove() {
+                    let move;
+                    const randomChance = Math.random();
+
+                    // 70% chance to make the best move, 30% chance to make a less optimal move
+                    if (randomChance < 0.7) {
+                        move = getBestMove();
+                    } else {
+                        move = getRandomMove(); // This move might be less optimal
+                    }
+
+                    if (move !== -1) {
+                        gameBoard[move] = 'O';
+                        cells[move].textContent = 'O';
+
+                        if (checkWinner(gameBoard, 'O')) {
+                            message.textContent = 'O wins!';
+                            gameOver = true;
+                            return;
+                        }
+
+                        if (gameBoard.every(cell => cell)) {
+                            message.textContent = 'It\'s a tie!';
+                            gameOver = true;
+                            return;
+                        }
+
+                        currentPlayer = 'X';
+                        message.textContent = Player ${ currentPlayer } 's turn;
+                    }
+                }
+
+                function handleClick(e) {
+                    if (gameOver) return;
+
+                    const index = e.target.getAttribute('data-index');
+                    if (gameBoard[index]) return;
+
+                    gameBoard[index] = currentPlayer;
+                    e.target.textContent = currentPlayer;
+
+                    if (checkWinner(gameBoard, currentPlayer)) {
+                        message.textContent = ${ currentPlayer } wins!;
+                        gameOver = true;
+                        return;
+                    }
+
+                    if (gameBoard.every(cell => cell)) {
+                        message.textContent = 'It\'s a tie!';
+                        gameOver = true;
+                        return;
+                    }
+
+                    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                    message.textContent = Player ${ currentPlayer } 's turn;
+
+                    if (currentPlayer === 'O') {
+                        setTimeout(computerMove, 500);
+                    }
+                }
+
+                function restartGame() {
+                    gameBoard = Array(9).fill(null);
+                    gameOver = false;
+                    currentPlayer = 'X';
+                    message.textContent = Player ${ currentPlayer } 's turn;
+                    cells.forEach(cell => cell.textContent = '');
+                }
+
+                cells.forEach(cell => cell.addEventListener('click', handleClick));
+                restartButton.addEventListener('click', restartGame);
+            });
+        </script>
+
+
+
+    </body>
+
+    </html>
