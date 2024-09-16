@@ -38,6 +38,16 @@ Version: 1.0.0
     ## user-list
 
 --------------------------------------------------------------*/
+
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px; /* Adjust this value as needed */
+    object-fit: cover;
+    
+  }
+}
+
 :root {
   --body-font-size: 16px;
   --line-height30: 1.8;
