@@ -42,9 +42,10 @@ Version: 1.0.0
 
 @media (max-width: 768px) {
   .carousel-item img {
-    height: 200px; /* Adjust this value as needed */
+    height: 200px;
+    /* Adjust this value as needed */
     object-fit: cover;
-    
+
   }
 }
 
@@ -3659,6 +3660,7 @@ ul {
   top: 0;
   width: 94%;
   max-width: 34rem;
+  height: 7rem;
   left: 50%;
   transform: translateX(-50%);
   padding: 50px 20px 30px;
@@ -3864,6 +3866,7 @@ ul {
   position: fixed;
   width: 98%;
   max-width: 34.5rem;
+  height: 7rem;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
@@ -5859,9 +5862,10 @@ ul {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 94%;
-  max-width: 34rem;
+  width: 98%;
+  max-width: 34.5rem;
   z-index: 9;
+  padding: 0;
   border-radius: 30px 30px 0px 0px;
   background: var(--white-color, #fff);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
@@ -5870,12 +5874,15 @@ ul {
 .main-footer-bottom ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .main-footer-bottom ul li {
   list-style: none;
   display: inline-block;
-  margin: 22px 15px 15px;
+  margin-top: 22px;
+  margin-bottom: 15px;
 }
 
 .main-footer-bottom ul li a {
