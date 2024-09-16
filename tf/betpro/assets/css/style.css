@@ -40,6 +40,73 @@ Version: 1.0.0
 --------------------------------------------------------------*/
 
 
+
+
+.card {
+  background-color: #f8f9fa; /* Light grey background for the entire card */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333; /* Darker text for contrast */
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666; /* Subtle text color */
+}
+
+.img-fluid {
+  height: 80px;
+  object-fit: cover;
+  border-radius: 20%; /* Rounded image for a cohesive look */
+}
+
+.border-end {
+  border-right: 1px solid #ddd; /* Subtle border between sections */
+}
+
+/* Remove the right border from the last section */
+.col-4:last-child {
+  border-right: none;
+}
+
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+
+
 @media (max-width: 768px) {
   .carousel-item img {
     height: 200px;
