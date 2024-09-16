@@ -5825,24 +5825,34 @@ ul {
 /*--------------------------------------------------
     ##Footer
 ---------------------------------------------------*/
-.main-footer-bottom {
+/* .main-footer-bottom {
   position: fixed;
-  width: 33.3rem;
+  width: 100%;
   margin: auto;
   z-index: 9;
   bottom: 0;
- 
+  padding: 2rem;
   padding: 0;
   border-radius: 30px 30px 0px 0px;
   background: var(--white-color, #fff);
   box-shadow: -6px 0px 24px 0px rgba(0, 0, 0, 0.08);
+} */
+.main-footer-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94%;
+  max-width: 34rem;
+  z-index: 9;
+  border-radius: 30px 30px 0px 0px;
+  background: var(--white-color, #fff);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .main-footer-bottom ul {
   margin: 0;
-  /* width: 100%; */
   padding: 0;
-  /* border: 2px solid; */
 }
 
 .main-footer-bottom ul li {
