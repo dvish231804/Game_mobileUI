@@ -228,7 +228,7 @@
                     e.target.textContent = currentPlayer;
 
                     if (checkWinner(gameBoard, currentPlayer)) {
-                        message.textContent = ${ currentPlayer } wins!;
+                        message.textContent = ${currentPlayer}wins!;
                         gameOver = true;
                         return;
                     }
@@ -240,7 +240,7 @@
                     }
 
                     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-                    message.textContent = Player ${ currentPlayer } 's turn;
+                    message.textContent = Player ${ currentPlayer } 'sturn';
 
                     if (currentPlayer === 'O') {
                         setTimeout(computerMove, 500);
@@ -251,7 +251,7 @@
                     gameBoard = Array(9).fill(null);
                     gameOver = false;
                     currentPlayer = 'X';
-                    message.textContent = Player ${ currentPlayer } 's turn;
+                    message.textContent = Player ${ currentPlayer } 'sturn';
                     cells.forEach(cell => cell.textContent = '');
                 }
 
