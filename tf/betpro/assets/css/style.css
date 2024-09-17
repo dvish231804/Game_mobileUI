@@ -43,9 +43,11 @@ Version: 1.0.0
 
 
 .card {
-  background-color: #f8f9fa; /* Light grey background for the entire card */
+  background-color: #f8f9fa;
+  /* Light grey background for the entire card */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
 }
 
 .card-body {
@@ -55,22 +57,26 @@ Version: 1.0.0
 .card-title {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #333; /* Darker text for contrast */
+  color: #333;
+  /* Darker text for contrast */
 }
 
 .card-text {
   font-size: 0.9rem;
-  color: #666; /* Subtle text color */
+  color: #666;
+  /* Subtle text color */
 }
 
 .img-fluid {
   height: 80px;
   object-fit: cover;
-  border-radius: 20%; /* Rounded image for a cohesive look */
+  border-radius: 20%;
+  /* Rounded image for a cohesive look */
 }
 
 .border-end {
-  border-right: 1px solid #ddd; /* Subtle border between sections */
+  border-right: 1px solid #ddd;
+  /* Subtle border between sections */
 }
 
 /* Remove the right border from the last section */
@@ -3920,7 +3926,7 @@ ul {
 /***bet-page***************/
 .single-page-area {
   padding-bottom: 115px;
-  padding-top: 115px;
+  padding-top: 95px;
 }
 
 .single-page-area .title-area {
@@ -5157,7 +5163,7 @@ ul {
 
 /*sports-page*******/
 .sports-page-wrap {
-  margin-top: 29px;
+  margin-top: 22px;
 }
 
 .sports-page-wrap .nav-tabs {
@@ -5280,7 +5286,7 @@ ul {
 
 /*my-bet-page*******/
 .mybet-page-wrap {
-  margin-top: 29px;
+  margin-top: 22px;
 }
 
 .mybet-page-wrap .nav-tabs {
