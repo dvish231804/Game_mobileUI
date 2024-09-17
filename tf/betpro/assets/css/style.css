@@ -40,6 +40,92 @@ Version: 1.0.0
 --------------------------------------------------------------*/
 
 
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+body {
+  padding-top: 20px;
+}
+
+/* Styling the player list */
+#playerList {
+  max-height: 60vh;
+  /* Limit the height to 60% of the viewport height */
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  position: relative;
+  min-width: 35rem;
+  /* Set minimum width of the container */
+}
+
+/* Styling each list item */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9fc;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.list-group-item:hover {
+  background-color: #e6f7ff;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-id,
+.player-name {
+  font-weight: bold;
+  color: #333333;
+}
+
+.player-win {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.win-icon {
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+/* Smooth scroll effect */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.scrolling {
+  animation: scrollUp 20s linear infinite;
+  /* Scroll entire list in 20 seconds */
+}
+
+/* Ensures the container is responsive for small screens */
+@media (max-width: 768px) {
+  #playerList {
+    min-width: 100%;
+    /* For mobile, adjust width to full */
+  }
+}
 
 
 .card {
