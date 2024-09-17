@@ -233,10 +233,10 @@
             </div>
 
 
-            <div class="container">
+            <div class="container ">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8">
-                        <h4 class="mb-4 text-center">Fantasy Sports - Live Players</h4>
+                        <h4 class="mb-4 mt-4 text-center ">Top - Live Players</h4>
                         <div id="playerList" class="bg-light border">
                             <ul id="scrollContent" class="list-group">
                                 <!-- Players will be added here dynamically -->
@@ -246,6 +246,45 @@
                 </div>
             </div>
 
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8">
+                        <h4 class="mb-4 mt-4 text-center">Top-3 Winners</h4>
+                        <div id="topPlayersList">
+                            <div class="players-wrapper">
+                                <div class="player-card">
+                                    <div class="rank-badge">#3</div>
+                                    <img src="https://via.placeholder.com/100" alt="Player 3" class="profile-image">
+                                    <div class="card-content">
+                                        <div class="player-name">Player 3</div>
+                                        <div class="player-winnings">800 Points</div>
+                                        <div class="stars">⭐⭐⭐</div>
+                                    </div>
+                                </div>
+                                <div class="player-card top-player">
+                                    <div class="rank-badge">#1</div>
+                                    <img src="https://via.placeholder.com/100" alt="Player 1" class="profile-image">
+                                    <div class="card-content">
+                                        <div class="player-name">Player 1</div>
+                                        <div class="player-winnings">1500 Points</div>
+                                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                                    </div>
+                                </div>
+                                <div class="player-card">
+                                    <div class="rank-badge">#2</div>
+                                    <img src="https://via.placeholder.com/100" alt="Player 2" class="profile-image">
+                                    <div class="card-content">
+                                        <div class="player-name">Player 2</div>
+                                        <div class="player-winnings">1200 Points</div>
+                                        <div class="stars">⭐⭐⭐⭐</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="main-footer-bottom d-block text-center">
@@ -297,16 +336,16 @@
 
     <script>
         const players = [
-            { id: 1, name: 'John Doe', win: '$1500' },
-            { id: 2, name: 'Jane Smith', win: '$300 ' },
-            { id: 3, name: 'Mike Johnson', win: '$700' },
-            { id: 4, name: 'Alice Williams', win: '$1200 ' },
-            { id: 5, name: 'Chris Evans', win: '$500' },
-            { id: 6, name: 'Natasha Romanoff', win: '$900 ' },
-            { id: 7, name: 'Bruce Banner', win: '$1000' },
-            { id: 8, name: 'Tony Stark', win: '$2500' },
-            { id: 9, name: 'Steve Rogers', win: '$800' },
-            { id: 10, name: 'Thor Odinson', win: '$1500' }
+            { id: 1, name: 'John Doe', win: '$1500', profilePic: 'https://via.placeholder.com/50' },
+            { id: 2, name: 'Jane Smith', win: '300 ', profilePic: 'https://via.placeholder.com/50' },
+            { id: 3, name: 'Mike Johnson', win: '$700', profilePic: 'https://via.placeholder.com/50' },
+            { id: 4, name: 'Alice Williams', win: '$1200 ', profilePic: 'https://via.placeholder.com/50' },
+            { id: 5, name: 'Chris Evans', win: '$500', profilePic: 'https://via.placeholder.com/50' },
+            { id: 6, name: 'Natasha Romanoff', win: '$900 ', profilePic: 'https://via.placeholder.com/50' },
+            { id: 7, name: 'Bruce Banner', win: '$1000', profilePic: 'https://via.placeholder.com/50' },
+            { id: 8, name: 'Tony Stark', win: '$2500', profilePic: 'https://via.placeholder.com/50' },
+            { id: 9, name: 'Steve Rogers', win: '$800', profilePic: 'https://via.placeholder.com/50' },
+            { id: 10, name: 'Thor Odinson', win: '$1500 ', profilePic: 'https://via.placeholder.com/50' }
         ];
 
         const scrollContent = document.getElementById('scrollContent');
@@ -318,8 +357,11 @@
                 listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
                 listItem.innerHTML = `
         <div class="player-info">
-          <span class="player-id">ID: ${player.id}</span>
-          <span class="player-name">${player.name}</span>
+          <img src="${player.profilePic}" alt="Profile Picture" class="profile-pic">
+          <div>
+            <span class="player-id">ID: ${player.id}</span><br>
+            <span class="player-name">${player.name}</span>
+          </div>
         </div>
         <div class="d-flex align-items-center">
           <span class="win-icon">&#x1F3C6;</span>
