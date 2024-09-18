@@ -511,6 +511,7 @@ body {
   max-width: 35rem;
   margin: auto;
   border: 2px solid red;
+  min-height: 100vh;
 
 }
 
@@ -9471,4 +9472,20 @@ span.badge-pulse-orange {
 
 .uikit-table-3 tbody tr:nth-child(7) {
   background: #f3e9e9;
+}
+
+/*Kyc Page style*/
+.kyc-sub-block {
+  background: var(--white-color, #fff);
+  font-size: 16px;
+  /* gap: 12px; */
+  padding: 11px 10px 11px 5px;
+  border-radius: 8px;
+}
+
+.kyc-sub-block .p-block {
+  margin-left: 2.27rem;
+}
+.kyc-buttons{
+  width: 2rem;
 }
