@@ -39,6 +39,12 @@ Version: 1.0.0
 
 --------------------------------------------------------------*/
 
+.scrollable-content {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  padding-right: 10px; /* Space for scrollbar */
+  margin-bottom: 20px; /* Add some space below */
+}
 
 
 
