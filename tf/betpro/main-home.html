@@ -41,6 +41,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&amp;display=swap"
         rel="stylesheet" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body class="sc5">
@@ -403,6 +408,19 @@
         populatePlayers();
         startAutoScroll();
 
+        jQuery(document).on('ready', function () {
+            "use strict";
+
+            $('.switch-button').on('click', function () {
+                $('.color-panel').toggleClass('close');
+            });
+
+            $('.color-panel ul li').on('click', function () {
+                $('.color-panel ul li').removeClass('active');
+                $(this).toggleClass('active');
+            });
+
+        }); s
 
 
     </script>
@@ -427,38 +445,44 @@
     <!-- main js  -->
     <script src="assets/js/main.js"></script>
 
-    <script src="assets/js/switcher/styleswitcher.js"></script>
+    <script src="assets/js/switcher/styleswitcher.js"></script> 
     <script src="assets/js/switcher/style-switcher.css"></script>
 
-    <!-- <div class="color-panel">
-        <div class="switch-button"><i class="fa fa-cog"></i></div>
-        <ul>
-            <li class="active default">
-                <a href="#" onclick="setActiveStyleSheet('default'); return false;" title="default"></a>
-            </li>
-            <li class="sky-blue">
-                <a href="#" onclick="setActiveStyleSheet('sky'); return false;" title="sky"></a>
-            </li>
-            <li class="light-sky-blue">
-                <a href="#" onclick="setActiveStyleSheet('light-sky'); return false;" title="light-sky"></a>
-            </li>
-            <li class="pink">
-                <a href="#" onclick="setActiveStyleSheet('pink'); return false;" title="pink"></a>
-            </li>
-            <li class="purple">
-                <a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="purple"></a>
-            </li>
-            <li class="deep-purple">
-                <a href="#" onclick="setActiveStyleSheet('deep-purple'); return false;" title="deep-purple"></a>
-            </li>
-            <li class="brown">
-                <a href="#" onclick="setActiveStyleSheet('brown'); return false;" title="brown"></a>
-            </li>
-            <li class="san-marino">
-                <a href="#" onclick="setActiveStyleSheet('san-marino'); return false;" title="san-marino"></a>
-            </li>
-        </ul>
-    </div> -->
+    <!-- <script src="js/switcher/styleswitcher.js"></script> -->
+    <script src="js/switcher/style-switcher-seeting.js"></script>
+
+    <div class="color-panel">
+        <div class="color-panel ">
+            <div class="switch-button"><i class="fa fa-cog"></i></div>
+            <ul>
+                <li class="active default">
+                    <a href="#" onclick="setActiveStyleSheet('default'); return false;" title="default"></a>
+                </li>
+                <li class="sky-blue">
+                    <a href="#" onclick="setActiveStyleSheet('sky'); return false;" title="sky"></a>
+                </li>
+                <li class="light-sky-blue">
+                    <a href="#" onclick="setActiveStyleSheet('light-sky'); return false;" title="light-sky"></a>
+                </li>
+                <li class="pink">
+                    <a href="#" onclick="setActiveStyleSheet('pink'); return false;" title="pink"></a>
+                </li>
+                <li class="purple">
+                    <a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="purple"></a>
+                </li>
+                <li class="deep-purple">
+                    <a href="#" onclick="setActiveStyleSheet('deep-purple'); return false;" title="deep-purple"></a>
+                </li>
+                <li class="brown">
+                    <a href="#" onclick="setActiveStyleSheet('brown'); return false;" title="brown"></a>
+                </li>
+                <li class="san-marino">
+                    <a href="#" onclick="setActiveStyleSheet('san-marino'); return false;" title="san-marino"></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
 
 
 </body>

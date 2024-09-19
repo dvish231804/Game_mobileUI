@@ -8,6 +8,7 @@
     transition: all 0.5s ease 0s;
     width: 120px;
     z-index: 9;
+    margin: auto;
 }
 
 .color-panel.close {
@@ -49,11 +50,13 @@
     transition: all 0.3s ease 0s;
     width: 30px;
 }
+
 .color-panel a {
-  display: block;
-  height: 100%;
-  width: 100%;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
+
 .color-panel li.default {
     background: #fe2f43 none repeat scroll 0 0;
 }
