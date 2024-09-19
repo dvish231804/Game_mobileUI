@@ -1,0 +1,109 @@
+.color-panel {
+    display: block;
+    height: 230px;
+    left: 0;
+    position: fixed;
+    top: 20%;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 120px;
+    z-index: 9;
+}
+
+.color-panel.close {
+    left: -120px;
+}
+
+.switch-button {
+    background: #ddd none repeat scroll 0 0;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    color: #fe2f43;
+    cursor: pointer;
+    font-size: 30px;
+    height: 40px;
+    padding-top: 5px;
+    position: absolute;
+    right: -40px;
+    text-align: center;
+    top: 0;
+    width: 40px;
+}
+
+.color-panel ul {
+    background: #ddd none repeat scroll 0 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.color-panel ul li {
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    margin: 5px;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 30px;
+}
+.color-panel a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.color-panel li.default {
+    background: #fe2f43 none repeat scroll 0 0;
+}
+
+.color-panel li.sky-blue {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+.color-panel li.light-sky-blue {
+    background: #00bcd4 none repeat scroll 0 0;
+}
+
+.color-panel li.pink {
+    background: #ff0080 none repeat scroll 0 0;
+}
+
+.color-panel li.purple {
+    background: #9c27b0 none repeat scroll 0 0;
+}
+
+.color-panel li.deep-purple {
+    background: #673ab7 none repeat scroll 0 0;
+}
+
+.color-panel li.brown {
+    background: #795548 none repeat scroll 0 0;
+}
+
+.color-panel li.san-marino {
+    background: #3f51b5 none repeat scroll 0 0;
+}
+
+.color-panel ul li::before {
+    color: #fff;
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 20px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 6px;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.color-panel ul li.active::before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

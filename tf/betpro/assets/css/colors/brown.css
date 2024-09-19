@@ -1,0 +1,374 @@
+/*--------------------------------------
+
+THEME NAME : WEEDING DAY
+COLOR NAME : BROWN
+COLOR CODE : #795548
+
+---------------------------------------*/
+
+.navbar-header .collapse,
+.navbar-toggle {
+    border: 2px solid #795548;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.container {
+    background-color: #795548 !important;
+        
+}
+
+.navbar-toggle .icon-bar {
+    background: #795548 none repeat scroll 0 0;
+}
+
+.area-title h2,
+.area-title h2 span {
+    color: #795548;
+}
+
+.area-title-after::before,
+.area-title-after::after {
+    background: #795548 none repeat scroll 0 0;
+}
+
+.area-icon {
+    color: #795548;
+}
+
+
+/*---------------------------------
+    2.1 MAINMENU AREA
+-----------------------------------*/
+
+ul#nav li a {
+    color: #ffffff;
+}
+
+ul#nav li a:hover,
+ul#nav li.active a {
+    color: #795548;
+}
+
+.is-sticky ul#nav li a:hover,
+.is-sticky ul#nav li.active a {
+    color: #795548;
+}
+
+.is-sticky .mainmenu-area {
+    background: #212121;
+}
+
+
+/*-----------------------------------
+    2.2 WELCOME TEXT AREA
+-------------------------------------*/
+
+.welcome-text h3 {
+    color: #795548;
+}
+
+.welcome-text h1 span {
+    color: #795548;
+}
+
+.welcome-text span::after {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/white_heart.svg") no-repeat scroll center center / contain;
+}
+
+h2.married-date {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/hidding/brown_hidding_bg.svg") no-repeat scroll center center / contain;
+}
+
+.home-button a:hover,
+.home-button a i {
+    color: #795548;
+}
+
+
+/*-----------------------------
+    3. ABOUT AREA
+-------------------------------*/
+
+.name-and-title h3 {
+    color: #795548;
+}
+
+a.learn-more {
+    color: #795548;
+}
+
+a.learn-more:hover {
+    background: #795548 none repeat scroll 0 0;
+    border-color: #795548;
+}
+
+ul.cauple-social-bookmark {
+    border: 1px solid #ebebeb;
+}
+
+.cauple-images-and-social-bookmark:hover ul.cauple-social-bookmark {
+    border-color: #795548;
+}
+
+ul.cauple-social-bookmark li a {
+    color: #795548;
+}
+
+ul.cauple-social-bookmark li a:hover {
+    background: #795548 none repeat scroll 0 0;
+    border-color: #795548;
+}
+
+
+/*------------------------------
+    4. MANAGEMENT AREA
+-------------------------------*/
+
+.cauple-img::after {
+    background: #795548;
+}
+
+
+/*------------------------------
+    5. WISHER AREA
+-------------------------------*/
+
+.wisher-area-bg::after {
+    background: #795548 none repeat scroll 0 0;
+}
+
+.wisher-member-img::before {
+    border: 10px solid;
+}
+
+
+/*------------------------------
+    6. STORY AREA
+-------------------------------*/
+
+.story-meta::after {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/brown_heart.svg") no-repeat scroll center center / contain;
+}
+
+.single-story:nth-child(2n) .story-meta::after {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/white_heart.svg") no-repeat scroll center center / contain;
+}
+
+.show-more a {
+    background: #795548 none repeat scroll 0 0;
+    border: 2px solid #795548;
+}
+
+.show-more a:hover {
+    color: #795548;
+}
+
+
+/*------------------------------
+    7. FUN FACT AREA
+-------------------------------*/
+
+.fact-area-bg::after {
+    background: #795548 none repeat scroll 0 0;
+}
+
+
+/*------------------------------
+    8. GALLERY AREA
+-------------------------------*/
+
+.single-gallery {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.single-gallery::after {
+    background: #795548 none repeat scroll 0 0;
+}
+
+.gallery-overlay {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/white_heart.svg") no-repeat scroll center center / contain;
+}
+
+.gallery-overlay a {
+    color: #795548;
+}
+
+.gallery-overlay:hover {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/brown_heart.svg") no-repeat scroll center center / contain;
+    color: #fff;
+}
+
+
+/*-----------------------------
+    9. BLOG AREA
+------------------------------*/
+
+.single-blog:hover .post-thumbnail::before {
+    border-color: #795548;
+}
+
+.single-blog:hover .post-title-and-date::after {
+    background: #795548;
+}
+
+.post-title-and-date h3 a {
+    color: #333333;
+}
+
+.post-title-and-date h3 a:hover {
+    color: #795548;
+}
+
+p.postmeta a:hover {
+    color: #795548;
+}
+
+.single-story-details h3 {
+    color: #795548;
+}
+
+a.read-more {
+    color: #795548;
+}
+
+.read-more:hover {
+    background: #795548 none repeat scroll 0 0;
+    border-color: #795548;
+}
+
+
+/*-----------------------------
+    10. EVENT AREA
+------------------------------*/
+
+.event-hidding,
+a.map-location {
+    color: #795548;
+}
+
+.event-schedule,
+a.map-location:hover {
+    background: rgba(121, 85, 72, 0.8);
+}
+
+
+/*-----------------------------
+    11. CONTACT AREA
+------------------------------*/
+
+input.form-control:focus,
+.contact-form textarea:focus {
+    border-color: #795548;
+}
+
+.contact-form button {
+    color: #795548;
+}
+
+.contact-form button:hover {
+    background: #795548 none repeat scroll 0 0;
+    border-color: #795548;
+}
+
+
+/*-----------------------------
+    12. FOOTER AREA
+------------------------------*/
+
+.single-footer-widget h3::after {
+    background: #795548 none repeat scroll 0 0;
+}
+
+.single-footer-widget ul li {
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.single-footer-widget ul li:hover {
+    border-color: #795548;
+}
+
+ul.footer-pages-menu a {
+    color: #363636;
+}
+
+.footer-pages-menu a:hover {
+    color: #795548;
+}
+
+.feed-icon,
+.contact-icon {
+    color: #795548;
+}
+
+.footer-widget-social-bookmark ul li a {
+    color: #795548;
+}
+
+.footer-widget-social-bookmark ul li a:hover {
+    background: #795548 none repeat scroll 0 0;
+    border-color: #795548;
+}
+
+.footer-contact a,
+.twitter-feed a {
+    color: #333333;
+}
+
+.footer-contact a:hover,
+.twitter-feed a:hover {
+    color: #795548;
+}
+
+.subscriber-form form button {
+    background: #795548 none repeat scroll 0 0;
+}
+
+.subscriber-form form button:hover {
+    color: #795548;
+}
+
+.subscriber-form label {
+    color: #795548;
+}
+
+.footer-bottom {
+    background: #795548 none repeat scroll 0 0;
+}
+
+.footer-copyright-social-bookmark ul li a:hover {
+    color: #795548;
+}
+
+
+/*------------------------------
+    13. SCROLL TO TOP
+-------------------------------*/
+
+a.scrolltotop {
+    background: #795548 none repeat scroll 0 0;
+}
+
+a.scrolltotop:hover {
+    box-shadow: 0 0 0 0 #272727;
+    background: #272727;
+}
+
+
+/*-----------------------------
+    14. PRELOADER
+------------------------------*/
+
+.preloader-spinner {
+    border: 5px solid #795548;
+}
+
+.switch-button {
+    color: #795548;
+}
