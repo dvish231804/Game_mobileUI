@@ -365,3 +365,57 @@
 
 
 })(jQuery);
+
+// pop up for varification
+ 
+let currentVerificationType = '';
+
+function openModal(type) {
+  currentVerificationType = type;
+  document.getElementById('verificationTitle').innerText = `Verify ${type.charAt(0).toUpperCase() + type.slice(1)}`;
+  document.getElementById('verificationInput').style.display = 'block';
+  document.getElementById('otpInput').style.display = 'none';
+  document.getElementById('verifyButton').style.display = 'none';
+  document.getElementById('statusMessage').innerText = '';
+  document.getElementById('verifyButton').classList.remove('success', 'failure'); // Reset button classes
+  document.getElementById('verificationModal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('verificationModal').style.display = 'none';
+}
+
+function sendOTP() {
+  const input = document.getElementById('verificationInput').value;
+  if (!input) {
+    alert('Please enter your details.');
+    return;
+  }
+
+  // Simulate sending OTP (integrate with your backend here)
+  console.log(`Sending OTP to ${input} for ${currentVerificationType}`);
+
+  // Alert message for OTP sent
+  alert(`OTP has been sent to ${input}. Please check your messages.`);
+
+  // Show OTP input and verify button
+  document.getElementById('verificationInput').style.display = 'none';
+  document.getElementById('otpInput').style.display = 'block';
+  document.getElementById('verifyButton').style.display = 'block';
+}
+
+function verifyOTP() {
+  const otp = document.getElementById('otpInput').value;
+
+  // Simulate OTP verification (replace with your backend verification)
+  if (otp === '123456') { // Replace this condition with actual verification
+    document.getElementById('statusMessage').innerText = 'Verification successful!';
+    document.getElementById('statusMessage').style.color = 'green';
+    document.getElementById('verifyButton').classList.add('success'); // Turn button green
+    closeModal(); // Optionally close the modal
+  } else {
+    document.getElementById('statusMessage').innerText = 'Verification failed.';
+    document.getElementById('statusMessage').style.color = 'red';
+    document.getElementById('verifyButton').classList.add('failure'); // Turn button red
+  }
+}
