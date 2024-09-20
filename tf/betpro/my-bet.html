@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <!-- Mirrored from s7template.com/tf/betpro/my-bet.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Sep 2024 07:05:42 GMT -->
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +31,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="sc5">
     <!-- preloader area start -->
     <div class="preloader" id="preloader">
@@ -49,72 +51,85 @@
         <a class="btn back-page-btn" href="main-home.html"
           ><i class="ri-arrow-left-s-line"></i
         ></a>
-        <h3 class="ms-5 ps-5">My Bet</h3>
+        <h3 class="ms-5 ps-5">Activities</h3>
         <div class="balance">
           $500
           <span><img src="assets/img/icon/dollar-sign.png" alt="img" /></span>
         </div>
       </div>
       <div class="mybet-page-wrap">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#home"
-              type="button"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-            >
-              All
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#profile"
-              type="button"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-            >
-              Pending
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="win-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#win"
-              type="button"
-              role="tab"
-              aria-controls="win"
-              aria-selected="false"
-            >
-              Wins
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="lose-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#lose"
-              type="button"
-              role="tab"
-              aria-controls="lose"
-              aria-selected="false"
-            >
-              Loses
-            </button>
-          </li>
-        </ul>
-        <div class="container">
+        <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">
+            All
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">
+            Pending
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="win-tab" data-bs-toggle="tab" data-bs-target="#win" type="button" role="tab"
+            aria-controls="win" aria-selected="false">
+            Wins
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="lose-tab" data-bs-toggle="tab" data-bs-target="#lose" type="button" role="tab"
+            aria-controls="lose" aria-selected="false">
+            Loses
+          </button>
+        </li>
+      </ul> -->
+        <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">
+            Today
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="lose-tab" data-bs-toggle="tab" data-bs-target="#lose" type="button" role="tab"
+            aria-controls="lose" aria-selected="false">
+            Loses
+          </button>
+        </li>
+      </ul> -->
+
+        <div class="container mt-4">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item col-6" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Today
+              </button>
+            </li>
+            <li class="nav-item col-6" role="presentation">
+              <button
+                class="nav-link"
+                id="lose-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#lose"
+                type="button"
+                role="tab"
+                aria-controls="lose"
+                aria-selected="false"
+              >
+                Previous Activity
+              </button>
+            </li>
+          </ul>
           <div class="tab-content" id="myTabContent">
             <div
               class="tab-pane fade show active"
@@ -122,60 +137,16 @@
               role="tabpanel"
               aria-labelledby="home-tab"
             >
+              <!-- Content for Today tab -->
               <div class="mybet-single-card">
                 <div class="card-title">
-                  <h6>Super League</h6>
+                  <h6>Tic-tac-toe</h6>
                   <span>Wed 25 Oct - 12:25:18</span>
                 </div>
                 <ul class="bet-details">
                   <li><span>Match Result:</span><span>Draw</span></li>
                   <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
-                  </li>
-                </ul>
-                <ul class="bet-status">
-                  <li class="status-title">
-                    <span>Stake</span><span>Return</span><span>Status</span>
-                  </li>
-                  <li class="price">
-                    <span>$500</span><span>$600</span
-                    ><span class="status-pending">Pending</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="mybet-single-card">
-                <div class="card-title">
-                  <h6>Super League</h6>
-                  <span>Wed 25 Oct - 12:25:18</span>
-                </div>
-                <ul class="bet-details">
-                  <li><span>Match Result:</span><span>Draw</span></li>
-                  <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
-                  </li>
-                </ul>
-                <ul class="bet-status">
-                  <li class="status-title">
-                    <span>Stake</span><span>Return</span><span>Status</span>
-                  </li>
-                  <li class="price">
-                    <span>$500</span><span>$600</span
-                    ><span class="status-win">Won</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="mybet-single-card">
-                <div class="card-title">
-                  <h6>Super League</h6>
-                  <span>Wed 25 Oct - 12:25:18</span>
-                </div>
-                <ul class="bet-details">
-                  <li><span>Match Result:</span><span>Draw</span></li>
-                  <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
+                    <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
                   </li>
                 </ul>
                 <ul class="bet-status">
@@ -188,96 +159,16 @@
                   </li>
                 </ul>
               </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
+
               <div class="mybet-single-card">
                 <div class="card-title">
-                  <h6>Super League</h6>
+                  <h6>Slots</h6>
                   <span>Wed 25 Oct - 12:25:18</span>
                 </div>
                 <ul class="bet-details">
                   <li><span>Match Result:</span><span>Draw</span></li>
                   <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
-                  </li>
-                </ul>
-                <ul class="bet-status">
-                  <li class="status-title">
-                    <span>Stake</span><span>Return</span><span>Status</span>
-                  </li>
-                  <li class="price">
-                    <span>$500</span><span>$600</span
-                    ><span class="status-pending">Pending</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="mybet-single-card">
-                <div class="card-title">
-                  <h6>Super League</h6>
-                  <span>Wed 25 Oct - 12:25:18</span>
-                </div>
-                <ul class="bet-details">
-                  <li><span>Match Result:</span><span>Draw</span></li>
-                  <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
-                  </li>
-                </ul>
-                <ul class="bet-status">
-                  <li class="status-title">
-                    <span>Stake</span><span>Return</span><span>Status</span>
-                  </li>
-                  <li class="price">
-                    <span>$500</span><span>$600</span
-                    ><span class="status-pending">Pending</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="mybet-single-card">
-                <div class="card-title">
-                  <h6>Super League</h6>
-                  <span>Wed 25 Oct - 12:25:18</span>
-                </div>
-                <ul class="bet-details">
-                  <li><span>Match Result:</span><span>Draw</span></li>
-                  <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
-                  </li>
-                </ul>
-                <ul class="bet-status">
-                  <li class="status-title">
-                    <span>Stake</span><span>Return</span><span>Status</span>
-                  </li>
-                  <li class="price">
-                    <span>$500</span><span>$600</span
-                    ><span class="status-pending">Pending</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="win"
-              role="tabpanel"
-              aria-labelledby="win-tab"
-            >
-              <div class="mybet-single-card">
-                <div class="card-title">
-                  <h6>Super League</h6>
-                  <span>Wed 25 Oct - 12:25:18</span>
-                </div>
-                <ul class="bet-details">
-                  <li><span>Match Result:</span><span>Draw</span></li>
-                  <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
+                    <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
                   </li>
                 </ul>
                 <ul class="bet-status">
@@ -290,17 +181,17 @@
                   </li>
                 </ul>
               </div>
+
               <div class="mybet-single-card">
                 <div class="card-title">
-                  <h6>Super League</h6>
+                  <h6>Tic-Tac-Toe</h6>
                   <span>Wed 25 Oct - 12:25:18</span>
                 </div>
                 <ul class="bet-details">
                   <li><span>Match Result:</span><span>Draw</span></li>
-                  <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
-                  </li>
+                  <!-- <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span>
+                </li> -->
                 </ul>
                 <ul class="bet-status">
                   <li class="status-title">
@@ -308,21 +199,21 @@
                   </li>
                   <li class="price">
                     <span>$500</span><span>$600</span
-                    ><span class="status-win">Won</span>
+                    ><span class="status-pending">Pending</span>
                   </li>
                 </ul>
               </div>
+
               <div class="mybet-single-card">
                 <div class="card-title">
-                  <h6>Super League</h6>
+                  <h6>Tic-Tac-Toe</h6>
                   <span>Wed 25 Oct - 12:25:18</span>
                 </div>
                 <ul class="bet-details">
                   <li><span>Match Result:</span><span>Draw</span></li>
-                  <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
-                  </li>
+                  <!-- <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span>
+                </li> -->
                 </ul>
                 <ul class="bet-status">
                   <li class="status-title">
@@ -330,7 +221,51 @@
                   </li>
                   <li class="price">
                     <span>$500</span><span>$600</span
-                    ><span class="status-win">Won</span>
+                    ><span class="status-pending">Won</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mybet-single-card">
+                <div class="card-title">
+                  <h6>Slots</h6>
+                  <span>Wed 25 Oct - 12:25:18</span>
+                </div>
+                <ul class="bet-details">
+                  <li><span>Match Result:</span><span>Draw</span></li>
+                  <!-- <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span>
+                </li> -->
+                </ul>
+                <ul class="bet-status">
+                  <li class="status-title">
+                    <span>Stake</span><span>Return</span><span>Status</span>
+                  </li>
+                  <li class="price">
+                    <span>$500</span><span>$600</span
+                    ><span class="status-pending">Pending</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mybet-single-card">
+                <div class="card-title">
+                  <h6>Guess The Number</h6>
+                  <span>Wed 25 Oct - 12:25:18</span>
+                </div>
+                <ul class="bet-details">
+                  <li><span>Match Result:</span><span>Draw</span></li>
+                  <!-- <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span>
+                </li> -->
+                </ul>
+                <ul class="bet-status">
+                  <li class="status-title">
+                    <span>Stake</span><span>Return</span><span>Status</span>
+                  </li>
+                  <li class="price">
+                    <span>$500</span><span>$600</span
+                    ><span class="status-pending">lose</span>
                   </li>
                 </ul>
               </div>
@@ -341,16 +276,39 @@
               role="tabpanel"
               aria-labelledby="lose-tab"
             >
+              <!-- Content for prvious tab -->
+
               <div class="mybet-single-card">
                 <div class="card-title">
-                  <h6>Super League</h6>
+                  <h6>Slots</h6>
                   <span>Wed 25 Oct - 12:25:18</span>
                 </div>
                 <ul class="bet-details">
                   <li><span>Match Result:</span><span>Draw</span></li>
                   <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
+                    <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
+                  </li>
+                </ul>
+                <ul class="bet-status">
+                  <li class="status-title">
+                    <span>Stake</span><span>Return</span><span>Status</span>
+                  </li>
+                  <li class="price">
+                    <span>$500</span><span>$600</span
+                    ><span class="status-win">Won</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mybet-single-card">
+                <div class="card-title">
+                  <h6>SLots Machine</h6>
+                  <span>Wed 25 Oct - 12:25:18</span>
+                </div>
+                <ul class="bet-details">
+                  <li><span>Match Result:</span><span>Draw</span></li>
+                  <li>
+                    <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
                   </li>
                 </ul>
                 <ul class="bet-status">
@@ -363,6 +321,7 @@
                   </li>
                 </ul>
               </div>
+
               <div class="mybet-single-card">
                 <div class="card-title">
                   <h6>Super League</h6>
@@ -371,8 +330,7 @@
                 <ul class="bet-details">
                   <li><span>Match Result:</span><span>Draw</span></li>
                   <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
+                    <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
                   </li>
                 </ul>
                 <ul class="bet-status">
@@ -381,20 +339,20 @@
                   </li>
                   <li class="price">
                     <span>$500</span><span>$600</span
-                    ><span class="status-lose">Lose</span>
+                    ><span class="status-win">Won</span>
                   </li>
                 </ul>
               </div>
+
               <div class="mybet-single-card">
                 <div class="card-title">
-                  <h6>Super League</h6>
+                  <h6>Tic-Tac-Toe</h6>
                   <span>Wed 25 Oct - 12:25:18</span>
                 </div>
                 <ul class="bet-details">
                   <li><span>Match Result:</span><span>Draw</span></li>
                   <li>
-                    <span>Fc Goa - Chennaiyin FC: (Odds)</span
-                    ><span>1 x 3.5</span>
+                    <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
                   </li>
                 </ul>
                 <ul class="bet-status">
@@ -408,43 +366,360 @@
                 </ul>
               </div>
             </div>
+
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Slots</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-win">Won</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="main-footer-bottom d-block text-center">
-        <ul>
-          <li>
-            <a href="main-home.html">
-              <img src="assets/img/icon/svg/home.svg" alt="icon" />
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="sports.html">
-              <img src="assets/img/icon/svg/sports.svg" alt="img" />
-              Games
-            </a>
-          </li>
-          <li>
-            <a class="active" href="my-bet.html">
-              <img src="assets/img/icon/svg/ticket.svg" alt="img" />
-              Activities
-            </a>
-          </li>
-          <!-- <li>
+      <div class="container">
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Tic-Tac-Toe</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <!-- <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span>
+                </li> -->
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-pending">Pending</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Slots</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-win">Won</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Guess the Number</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-lose">Lose</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Tic-Tac-Toe</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-pending">Pending</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Slots</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-pending">Pending</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Tic-Tac-Toe</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-pending">Pending</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="win"
+            role="tabpanel"
+            aria-labelledby="win-tab"
+          >
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Slots</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <!-- <span>Fc Goa - Chennaiyin FC: (Odds)</span><span>1 x 3.5</span> -->
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-win">Won</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Super League</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span
+                  ><span>1 x 3.5</span>
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-win">Won</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Super League</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span
+                  ><span>1 x 3.5</span>
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-win">Won</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="lose"
+            role="tabpanel"
+            aria-labelledby="lose-tab"
+          >
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Super League</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span
+                  ><span>1 x 3.5</span>
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-lose">Lose</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Super League</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span
+                  ><span>1 x 3.5</span>
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-lose">Lose</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mybet-single-card">
+              <div class="card-title">
+                <h6>Super League</h6>
+                <span>Wed 25 Oct - 12:25:18</span>
+              </div>
+              <ul class="bet-details">
+                <li><span>Match Result:</span><span>Draw</span></li>
+                <li>
+                  <span>Fc Goa - Chennaiyin FC: (Odds)</span
+                  ><span>1 x 3.5</span>
+                </li>
+              </ul>
+              <ul class="bet-status">
+                <li class="status-title">
+                  <span>Stake</span><span>Return</span><span>Status</span>
+                </li>
+                <li class="price">
+                  <span>$500</span><span>$600</span
+                  ><span class="status-lose">Lose</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer-bottom d-block text-center">
+      <ul>
+        <li>
+          <a href="main-home.html">
+            <img src="assets/img/icon/svg/home.svg" alt="icon" />
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="sports.html">
+            <img src="assets/img/icon/svg/sports.svg" alt="img" />
+            Games
+          </a>
+        </li>
+        <li>
+          <a class="active" href="my-bet.html">
+            <img src="assets/img/icon/svg/ticket.svg" alt="img" />
+            Activities
+          </a>
+        </li>
+        <!-- <li>
                     <a href="blog.html">
                         <img src="assets/img/icon/svg/document.svg" alt="img">
                         News
                     </a>
                 </li> -->
-          <li>
-            <a href="profile.html">
-              <img src="assets/img/icon/svg/profile.svg" alt="img" />
-              Account
-            </a>
-          </li>
-        </ul>
-      </div>
+        <li>
+          <a href="profile.html">
+            <img src="assets/img/icon/svg/profile.svg" alt="img" />
+            Account
+          </a>
+        </li>
+      </ul>
     </div>
 
     <!-- Modal -->

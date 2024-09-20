@@ -40,6 +40,31 @@ Version: 1.0.0
 --------------------------------------------------------------*/
 
 
+/*Activity page css for heading-nav*/
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: none;
+  /* Optional: to remove default border */
+}
+
+.nav-tabs .nav-item {
+  flex: 1;
+}
+
+.nav-tabs .nav-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  padding: 15px;
+  border: 1px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #ddd;
+  border-color: #ddd #ddd transparent;
+}
 
 
 
@@ -9486,6 +9511,7 @@ span.badge-pulse-orange {
 .kyc-sub-block .p-block {
   margin-left: 2.27rem;
 }
-.kyc-buttons{
+
+.kyc-buttons {
   width: 2rem;
 }
