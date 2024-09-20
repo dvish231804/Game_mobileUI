@@ -1,0 +1,373 @@
+/*--------------------------------------
+
+THEME NAME : WEEDING DAY
+COLOR NAME : SKY
+COLOR CODE : #2196f3
+
+---------------------------------------*/
+.container {
+    background-color: #2196f3 !important;
+        
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+.navbar-header .collapse,
+.navbar-toggle {
+    border: 2px solid #2196f3;
+}
+
+.navbar-toggle .icon-bar {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+.area-title h2,
+.area-title h2 span {
+    color: #2196f3;
+}
+
+.area-title-after::before,
+.area-title-after::after {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+.area-icon {
+    color: #2196f3;
+}
+
+
+/*---------------------------------
+    2.1 MAINMENU AREA
+-----------------------------------*/
+
+ul#nav li a {
+    color: #ffffff;
+}
+
+ul#nav li a:hover,
+ul#nav li.active a {
+    color: #2196f3;
+}
+
+.is-sticky ul#nav li a:hover,
+.is-sticky ul#nav li.active a {
+    color: #2196f3;
+}
+
+.is-sticky .mainmenu-area {
+    background: #212121;
+}
+
+
+/*-----------------------------------
+    2.2 WELCOME TEXT AREA
+-------------------------------------*/
+
+.welcome-text h3 {
+    color: #2196f3;
+}
+
+.welcome-text h1 span {
+    color: #2196f3;
+}
+
+.welcome-text span::after {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/white_heart.svg") no-repeat scroll center center / contain;
+}
+
+h2.married-date {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/hidding/sky_hidding_bg.svg") no-repeat scroll center center / contain;
+}
+
+.home-button a:hover,
+.home-button a i {
+    color: #2196f3;
+}
+
+
+/*-----------------------------
+    3. ABOUT AREA
+-------------------------------*/
+
+.name-and-title h3 {
+    color: #2196f3;
+}
+
+a.learn-more {
+    color: #2196f3;
+}
+
+a.learn-more:hover {
+    background: #2196f3 none repeat scroll 0 0;
+    border-color: #2196f3;
+}
+
+ul.cauple-social-bookmark {
+    border: 1px solid #ebebeb;
+}
+
+.cauple-images-and-social-bookmark:hover ul.cauple-social-bookmark {
+    border-color: #2196f3;
+}
+
+ul.cauple-social-bookmark li a {
+    color: #2196f3;
+}
+
+ul.cauple-social-bookmark li a:hover {
+    background: #2196f3 none repeat scroll 0 0;
+    border-color: #2196f3;
+}
+
+
+/*------------------------------
+    4. MANAGEMENT AREA
+-------------------------------*/
+
+.cauple-img::after {
+    background: #2196f3;
+}
+
+
+/*------------------------------
+    5. WISHER AREA
+-------------------------------*/
+
+.wisher-area-bg::after {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+.wisher-member-img::before {
+    border: 10px solid;
+}
+
+
+/*------------------------------
+    6. STORY AREA
+-------------------------------*/
+
+.story-meta::after {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/sky_heart.svg") no-repeat scroll center center / contain;
+}
+
+.single-story:nth-child(2n) .story-meta::after {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/white_heart.svg") no-repeat scroll center center / contain;
+}
+
+.show-more a {
+    background: #2196f3 none repeat scroll 0 0;
+    border: 2px solid #2196f3;
+}
+
+.show-more a:hover {
+    color: #2196f3;
+}
+
+
+/*------------------------------
+    7. FUN FACT AREA
+-------------------------------*/
+
+.fact-area-bg::after {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+
+/*------------------------------
+    8. GALLERY AREA
+-------------------------------*/
+
+.single-gallery {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.single-gallery::after {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+.gallery-overlay {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/white_heart.svg") no-repeat scroll center center / contain;
+}
+
+.gallery-overlay a {
+    color: #2196f3;
+}
+
+.gallery-overlay:hover {
+    background: rgba(0, 0, 0, 0) url("../../img/color-bg/heart/sky_heart.svg") no-repeat scroll center center / contain;
+    color: #fff;
+}
+
+
+/*-----------------------------
+    9. BLOG AREA
+------------------------------*/
+
+.single-blog:hover .post-thumbnail::before {
+    border-color: #2196f3;
+}
+
+.single-blog:hover .post-title-and-date::after {
+    background: #2196f3;
+}
+
+.post-title-and-date h3 a {
+    color: #333333;
+}
+
+.post-title-and-date h3 a:hover {
+    color: #2196f3;
+}
+
+p.postmeta a:hover {
+    color: #2196f3;
+}
+
+.single-story-details h3 {
+    color: #2196f3;
+}
+
+a.read-more,.switch-button {
+    color: #2196f3;
+}
+
+.read-more:hover {
+    background: #2196f3 none repeat scroll 0 0;
+    border-color: #2196f3;
+}
+
+
+/*-----------------------------
+    10. EVENT AREA
+------------------------------*/
+
+.event-hidding,
+a.map-location {
+    color: #2196f3;
+}
+
+.event-schedule,
+a.map-location:hover {
+    background: rgba(33, 150, 243, 0.8);
+}
+
+
+/*-----------------------------
+    11. CONTACT AREA
+------------------------------*/
+
+input.form-control:focus,
+.contact-form textarea:focus {
+    border-color: #2196f3;
+}
+
+.contact-form button {
+    color: #2196f3;
+}
+
+.contact-form button:hover {
+    background: #2196f3 none repeat scroll 0 0;
+    border-color: #2196f3;
+}
+
+
+/*-----------------------------
+    12. FOOTER AREA
+------------------------------*/
+
+.single-footer-widget h3::after {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+.single-footer-widget ul li {
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.single-footer-widget ul li:hover {
+    border-color: #2196f3;
+}
+
+ul.footer-pages-menu a {
+    color: #363636;
+}
+
+.footer-pages-menu a:hover {
+    color: #2196f3;
+}
+
+.feed-icon,
+.contact-icon {
+    color: #2196f3;
+}
+
+.footer-widget-social-bookmark ul li a {
+    color: #2196f3;
+}
+
+.footer-widget-social-bookmark ul li a:hover {
+    background: #2196f3 none repeat scroll 0 0;
+    border-color: #2196f3;
+}
+
+.footer-contact a,
+.twitter-feed a {
+    color: #333333;
+}
+
+.footer-contact a:hover,
+.twitter-feed a:hover {
+    color: #2196f3;
+}
+
+.subscriber-form form button {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+.subscriber-form form button:hover {
+    color: #2196f3;
+}
+
+.subscriber-form label {
+    color: #2196f3;
+}
+
+.footer-bottom {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+.footer-copyright-social-bookmark ul li a:hover {
+    color: #2196f3;
+}
+
+
+/*------------------------------
+    13. SCROLL TO TOP
+-------------------------------*/
+
+a.scrolltotop {
+    background: #2196f3 none repeat scroll 0 0;
+}
+
+a.scrolltotop:hover {
+    box-shadow: 0 0 0 0 #272727;
+    background: #272727;
+}
+
+
+/*-----------------------------
+    14. PRELOADER
+------------------------------*/
+
+.preloader-spinner {
+    border: 5px solid #2196f3;
+}
+.switch-button {
+    color: #2196f3;
+}
